@@ -1,0 +1,19 @@
+{
+  "name": "hello_gulp",
+  "version": "1.0.0",
+  "author": "doctype html",
+  "description": "introduction to gulp",
+  "license": "none",
+  "repository": "https://github.com/doctype-top/hello_gulp",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-connect": "^3.2.2",
+    "gulp-csslint-less-reporter": "^0.2.0",
+    "gulp-html-replace": "^1.5.5",
+    "gulp-htmlincluder": "^0.1.0",
+    "gulp-less-reporter": "0.0.3",
+    "gulp-livereload": "^3.8.1",
+    "gulp.spritesmith": "^6.2.1"
+  }
+}
