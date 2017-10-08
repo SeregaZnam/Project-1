@@ -6,11 +6,22 @@ var includer      = require('gulp-htmlincluder');
 var livereload 	  = require('gulp-livereload');
 var spritecreator = require('gulp.spritesmith');
 var less 		  = require('gulp-less');
- 
+
+gulp.task('sprite', function(){
+	var spriteData = gulp.src('dev/img/*.png')
+						.pipe(spritecreator({
+							imgName: 'sprite.png',
+							cssName: 'sprite.css',
+							algorithm: 'binary-tree'
+						}));
+	spriteData.img.pipe(gulp.dest('build/img/'));
+	spriteData.css.pipe(gulp.dest('build/css/'));
+});
+
 gulp.task('less', function () {
   return gulp.src('dev/styles/*.less')
     .pipe(less())
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('build/css/'))
     .pipe(connect.reload());
 });
 

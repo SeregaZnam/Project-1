@@ -1,0 +1,150 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-battery {
+  background-image: url(sprite.png);
+  background-position: -543px -381px;
+  width: 49px;
+  height: 26px;
+}
+.icon-caddy_full {
+  background-image: url(sprite.png);
+  background-position: 0px -480px;
+  width: 33px;
+  height: 27px;
+}
+.icon-download {
+  background-image: url(sprite.png);
+  background-position: -639px -381px;
+  width: 49px;
+  height: 24px;
+}
+.icon-facebook {
+  background-image: url(sprite.png);
+  background-position: -573px -407px;
+  width: 8px;
+  height: 14px;
+}
+.icon-google_plus {
+  background-image: url(sprite.png);
+  background-position: -688px -381px;
+  width: 16px;
+  height: 14px;
+}
+.icon-item-1 {
+  background-image: url(sprite.png);
+  background-position: -553px -324px;
+  width: 49px;
+  height: 57px;
+}
+.icon-item-2 {
+  background-image: url(sprite.png);
+  background-position: -493px -381px;
+  width: 50px;
+  height: 49px;
+}
+.icon-item-3 {
+  background-image: url(sprite.png);
+  background-position: -602px -324px;
+  width: 52px;
+  height: 50px;
+}
+.icon-item-4 {
+  background-image: url(sprite.png);
+  background-position: -443px -381px;
+  width: 50px;
+  height: 50px;
+}
+.icon-item-5 {
+  background-image: url(sprite.png);
+  background-position: -654px -324px;
+  width: 50px;
+  height: 50px;
+}
+.icon-logo {
+  background-image: url(sprite.png);
+  background-position: -443px -324px;
+  width: 110px;
+  height: 57px;
+}
+.icon-pinterest {
+  background-image: url(sprite.png);
+  background-position: -561px -407px;
+  width: 12px;
+  height: 14px;
+}
+.icon-project-1 {
+  background-image: url(sprite.png);
+  background-position: -235px 0px;
+  width: 235px;
+  height: 167px;
+}
+.icon-project-2 {
+  background-image: url(sprite.png);
+  background-position: -235px -324px;
+  width: 208px;
+  height: 130px;
+}
+.icon-project-3 {
+  background-image: url(sprite.png);
+  background-position: -470px -157px;
+  width: 235px;
+  height: 157px;
+}
+.icon-project-4 {
+  background-image: url(sprite.png);
+  background-position: -470px 0px;
+  width: 235px;
+  height: 157px;
+}
+.icon-project-5 {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 235px;
+  height: 167px;
+}
+.icon-project-6 {
+  background-image: url(sprite.png);
+  background-position: 0px -324px;
+  width: 235px;
+  height: 156px;
+}
+.icon-project-7 {
+  background-image: url(sprite.png);
+  background-position: 0px -167px;
+  width: 235px;
+  height: 157px;
+}
+.icon-project-8 {
+  background-image: url(sprite.png);
+  background-position: -235px -167px;
+  width: 235px;
+  height: 157px;
+}
+.icon-signs {
+  background-image: url(sprite.png);
+  background-position: -592px -381px;
+  width: 47px;
+  height: 26px;
+}
+.icon-twitter {
+  background-image: url(sprite.png);
+  background-position: -543px -407px;
+  width: 18px;
+  height: 14px;
+}
