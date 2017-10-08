@@ -1,23 +1,84 @@
 @import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 header {
   width: 100%;
   background-color: #363636;
 }
 header .header {
   width: 1000px;
-  height: 700px;
+  height: 600px;
   margin: 0 auto;
+  position: relative;
 }
 header .header-top {
   width: 100%;
   height: 100px;
   background-color: #e74c3c;
-  padding-top: 21px;
+  position: relative;
 }
 .header-top__logo {
+  float: left;
   width: 110px;
   height: 57px;
   background-image: url(../img/sprite.png);
   background-position: -443px -324px;
   margin-left: 21px;
+  position: absolute;
+  top: 21px;
+}
+.header-top__menu {
+  list-style: none;
+  float: right;
+  line-height: 98px;
+  margin-left: 20px;
+  padding: 0;
+}
+.header-top__menu li {
+  float: left;
+  height: 100%;
+}
+.header-top__menu li a {
+  padding: 0 20px;
+  height: 100%;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.header-top__menu li:hover {
+  background-color: #f46758;
+}
+.banner_wrapper {
+  position: absolute;
+  top: 228px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 64px;
+  text-transform: uppercase;
+}
+.banner__slogan {
+  width: 623px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: none;
+}
+.banner__button {
+  width: 211px;
+  height: 51px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #404040;
+  border: 1px solid #ffffff;
+}
+.banner__button:hover {
+  background-color: #737373;
+  cursor: pointer;
 }
