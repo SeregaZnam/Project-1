@@ -47,6 +47,24 @@
   height: 300px;
   background-color: #e74c3c;
 }
+.main-red_wrapper {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.main-red__heading {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 38px;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  line-height: 27px;
+  top: 51px;
+  text-align: center;
+}
 .header-container {
   width: 100%;
   background-color: #363636;
