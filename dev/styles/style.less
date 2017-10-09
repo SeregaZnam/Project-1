@@ -1,91 +1,28 @@
 @import "reset.css";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import "-header.less";
+@import "-main.less";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 
 @grey: #363636;
 @red: #e74c3c;
 @black: #000000;
 @hover: #f46758;
 @white: #ffffff;
+@dark: #3e3e3e;
 
-.text-style(@size, @position: uppercase) {
+.text-font(@size, @position) {
 	font-family: 'Open Sans', sans-serif;
-	color: @white;
 	font-size: @size;
 	text-transform: @position;
 }
 
-header {
-	width: 100%;
-	background-color: @grey;
-	.header {
-		width: 1000px;
-		height: 600px;
-		margin: 0 auto;
-		position: relative;
-	}
-	.header-top {
-		width: 100%;
-		height: 100px;
-		background-color: @red;
-		position: relative;
-	}
+.text-style(@color, @size, @position: uppercase) when (@color = light) {
+	color: @white;
+	.text-font(@size, @position);
 }
 
-.header-top__logo {
-	float: left;
-	width: 110px;
-	height: 57px;
-	background-image: url(../img/sprite.png);
-	background-position: -443px -324px;
-	margin-left: 21px;
-	position: absolute;
-	top: 21px;
-}
-
-.header-top__menu {
-	list-style: none;
-	float: right;
-	line-height: 98px;
-	margin-left: 20px;
-	padding: 0;
-	li {
-		float: left;
-		height: 100%;
-		a {
-			padding: 0 20px;
-			height: 100%;
-			display: inline-block;
-			text-decoration: none;
-			.text-style(18px);
-		}
-	}
-	li:hover {
-		background-color: @hover;
-	}
-}
-
-.banner_wrapper {
-	position: absolute;
-	top: 228px;
-	width: 100%;
-	text-align: center;
-	.text-style(64px);
-}
-
-.banner__slogan {
-	width: 623px;
-	margin: 0 auto;
-	.text-style(14px, none);
-}
-
-.banner__button {
-	width: 211px;
-	height: 51px;
-	.text-style(16px);
-	background-color: #404040;
-	border: 1px solid @white;
-	&:hover {
-		background-color: lighten(#404040, 20%);
-		cursor: pointer;
-	}
+.text-style(@color, @size, @position: uppercase) when (@color = dark) {
+	color: @dark;
+	font-weight: bold;
+	.text-font(@size, @position);
 }

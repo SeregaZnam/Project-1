@@ -1,0 +1,46 @@
+@import url('style.less');
+
+.main-container {
+	width: 100%;
+	height: 1065px;
+	background-color: @white;
+	.main {
+		width: 1000px;
+		height: 357px;
+		margin: 0 auto;
+		position: relative;
+	}
+}
+
+.main-item {
+	float: left;
+	margin-top: 100px;
+	width: 490px;
+	height: 157px;
+	&:first-child {
+		margin-right: 20px;
+	}
+}
+
+.main-item__headline {
+	.text-style(dark, 22px);
+	height: 16px;
+	margin-bottom: 34px;
+}
+
+.main-item__text {
+	height: 107px;
+	.text-style(dark, 14px, none);	
+	font-weight: 400;
+}
+
+.main-item__headline_red,
+.main-item__text_red {
+	color: @red;
+}
+
+.main-red {
+	width: 100%;
+	height: 300px;
+	background-color: @red;
+}
