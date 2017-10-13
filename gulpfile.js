@@ -19,7 +19,7 @@ gulp.task('sprite', function(){
 });
 
 gulp.task('less', function () {
-  return gulp.src('dev/styles/*.less')
+  return gulp.src('dev/styles/style.less')
     .pipe(less())
     .pipe(gulp.dest('build/css/'))
     .pipe(connect.reload());

@@ -16,6 +16,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-aim {
+  background-image: url(sprite.png);
+  background-position: -443px -381px;
+  width: 50px;
+  height: 50px;
+}
 .icon-battery {
   background-image: url(sprite.png);
   background-position: -543px -381px;
@@ -40,47 +46,35 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 8px;
   height: 14px;
 }
+.icon-for-square {
+  background-image: url(sprite.png);
+  background-position: -603px -324px;
+  width: 50px;
+  height: 50px;
+}
+.icon-forrst {
+  background-image: url(sprite.png);
+  background-position: -653px -324px;
+  width: 50px;
+  height: 50px;
+}
 .icon-google_plus {
   background-image: url(sprite.png);
   background-position: -688px -381px;
   width: 16px;
   height: 14px;
 }
-.icon-item-1 {
-  background-image: url(sprite.png);
-  background-position: -553px -324px;
-  width: 49px;
-  height: 57px;
-}
-.icon-item-2 {
-  background-image: url(sprite.png);
-  background-position: -493px -381px;
-  width: 50px;
-  height: 49px;
-}
-.icon-item-3 {
-  background-image: url(sprite.png);
-  background-position: -602px -324px;
-  width: 52px;
-  height: 50px;
-}
-.icon-item-4 {
-  background-image: url(sprite.png);
-  background-position: -443px -381px;
-  width: 50px;
-  height: 50px;
-}
-.icon-item-5 {
-  background-image: url(sprite.png);
-  background-position: -654px -324px;
-  width: 50px;
-  height: 50px;
-}
 .icon-logo {
   background-image: url(sprite.png);
   background-position: -443px -324px;
   width: 110px;
   height: 57px;
+}
+.icon-mail {
+  background-image: url(sprite.png);
+  background-position: -553px -324px;
+  width: 50px;
+  height: 50px;
 }
 .icon-pinterest {
   background-image: url(sprite.png);
@@ -90,7 +84,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-project-1 {
   background-image: url(sprite.png);
-  background-position: -235px 0px;
+  background-position: 0px 0px;
   width: 235px;
   height: 167px;
 }
@@ -114,7 +108,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-project-5 {
   background-image: url(sprite.png);
-  background-position: 0px 0px;
+  background-position: -235px 0px;
   width: 235px;
   height: 167px;
 }
@@ -126,15 +120,21 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-project-7 {
   background-image: url(sprite.png);
-  background-position: 0px -167px;
+  background-position: -235px -167px;
   width: 235px;
   height: 157px;
 }
 .icon-project-8 {
   background-image: url(sprite.png);
-  background-position: -235px -167px;
+  background-position: 0px -167px;
   width: 235px;
   height: 157px;
+}
+.icon-share {
+  background-image: url(sprite.png);
+  background-position: -493px -381px;
+  width: 50px;
+  height: 50px;
 }
 .icon-signs {
   background-image: url(sprite.png);
