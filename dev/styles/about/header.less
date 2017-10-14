@@ -1,11 +1,11 @@
-@import url('style.less');
+@import url('../main/style.less');
 
 .header-container {
 	width: 100%;
 	background-color: @grey;
 	.header {
 		width: 1000px;
-		height: 600px;
+		height: 244px;
 		margin: 0 auto;
 		position: relative;
 	}
@@ -48,30 +48,18 @@
 	li:hover {
 		background-color: @hover;
 	}
-}
-
-.banner_wrapper {
-	position: absolute;
-	top: 228px;
-	width: 100%;
-	text-align: center;
-	.text-style(light, 64px);
-}
-
-.banner__slogan {
-	width: 623px;
-	margin: 0 auto;
-	.text-style(light, 14px, none);
-}
-
-.banner__button {
-	width: 211px;
-	height: 51px;
-	.text-style(light, 16px);
-	background-color: #404040;
-	border: 1px solid @white;
-	&:hover {
-		background-color: lighten(#404040, 20%);
-		cursor: pointer;
+	&_active {
+		background-color: @hover;
 	}
+}
+
+.header-list {
+	position: absolute;
+	bottom: 12px;
+	line-height: 14px;
+}
+
+.header-list,
+.header-list__link {
+	.text-style(#bebebe, 14px, none);
 }

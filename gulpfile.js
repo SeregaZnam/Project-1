@@ -19,7 +19,26 @@ gulp.task('sprite', function(){
 });
 
 gulp.task('less', function () {
-  return gulp.src('dev/styles/style.less')
+  return gulp.src('dev/styles/home.less')
+    .pipe(less())
+    .pipe(gulp.dest('build/css/'))
+    && gulp.src('dev/styles/about.less')
+    .pipe(less())
+    .pipe(gulp.dest('build/css/'))
+    .pipe(connect.reload())
+    && gulp.src('dev/styles/products.less')
+    .pipe(less())
+    .pipe(gulp.dest('build/css/'))
+    .pipe(connect.reload())
+    && gulp.src('dev/styles/blog.less')
+    .pipe(less())
+    .pipe(gulp.dest('build/css/'))
+    .pipe(connect.reload())
+    && gulp.src('dev/styles/blog-post.less')
+    .pipe(less())
+    .pipe(gulp.dest('build/css/'))
+    .pipe(connect.reload())
+    && gulp.src('dev/styles/contact.less')
     .pipe(less())
     .pipe(gulp.dest('build/css/'))
     .pipe(connect.reload());
@@ -45,7 +64,7 @@ gulp.task('html', function(){
 gulp.task('default', function(){
 	gulp.start('html','less', 'server');
 
-	gulp.watch(['dev/styles/*.less'], function(){
+	gulp.watch(['dev/styles/**/*.less'], function(){
 		gulp.start('less');
 	});
 	gulp.watch(['dev/**/*.html'], function(){

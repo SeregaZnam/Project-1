@@ -351,10 +351,10 @@ a img {
   border-left: 3px solid black;
   border-bottom: 3px solid black;
   border-color: #a1a1a1;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   transform: rotate(45deg);
-  margin-right: -10px;
+  margin-right: 5px;
 }
 .our-project__scroll_left:hover {
   opacity: 0.8;
@@ -365,8 +365,8 @@ a img {
   border-right: 3px solid black;
   border-bottom: 3px solid black;
   border-color: #e74c3c;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   transform: rotate(-45deg);
 }
 .our-project__scroll_right:hover {
