@@ -1,0 +1,71 @@
+@import url('../main/style.less');
+
+.main-container {
+	width: 100%;
+	height: 1137px;
+	.main-container_center {
+		.block-center(1000px, 100%);
+		position: relative;
+	}
+}
+
+.main-container__content {
+	width: 100%;
+	height: 960px;
+	position: absolute;
+	top: 100px;
+}
+
+.main-container__content_heading {
+	.text-style(dark, 22px);
+	line-height: 16px;
+}
+
+.main-container__content_autor {
+	.text-style(#808080, 12px, none);
+	margin-top: 16px;
+	line-height: 12px;
+}
+
+.main-container__social {
+	height: 35px;
+	margin-top: 16px;
+}
+
+.main-container__social_item {
+	float: left;
+	margin-right: 5px;
+	height: 35px;
+	background-color: grey;
+	&:nth-child(1) {
+		width: 92px;
+	}
+	&:nth-child(2) {
+		width: 102px;
+	}
+	&:nth-child(3) {
+		width: 98px;
+	}
+	&:nth-child(4) {
+		width: 100px;
+	}
+}
+
+.main-container__image {
+	height: 350px;
+	background-color: #b1b1b1;
+	margin-top: 30px;
+}
+
+.main-container__text {
+	.text-style(dark, 16px, none);
+	font-weight: normal;
+}
+
+.main-container__text_bold {
+	font-weight: bold;
+}
+
+.main-container__text_red {
+	color: @red;
+}

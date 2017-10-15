@@ -1,0 +1,114 @@
+@import url('../main/style.less');
+
+.main-container {
+	width: 100%;
+	height: 664px;
+	.main-container_center {
+		.block-center(1000px, 100%);
+		position: relative;
+	}
+}
+
+.main-container__info {
+	width: 100%;
+	height: 464px;
+	position: absolute;
+	top: 100px;
+}
+
+.main-container__data {
+	width: 490px;
+	height: 100%;
+	float: left;
+	&:first-child {
+		margin-right: 20px;
+	}
+}
+
+.main-container__heading {
+	.text-style(dark, 22px);
+	line-height: 16px;
+}
+
+.main-container__text {
+	.text-style(dark, 14px, none);
+	font-weight: normal;
+	margin-top: 25px;
+}
+
+.main-container__form {
+	margin-top: 30px;
+}
+
+.form_input,
+.main-container__form_submit {
+	width: 100%;
+	height: 45px;
+	border: none;
+	background-color: #f7f7f7;
+}
+
+.main-container__form_message {
+	height: 180px;
+	resize: none;
+}
+
+.form_input {
+	text-indent: 17px;
+	vertical-align: top;
+	margin-bottom: 10px; 
+}
+::-webkit-input-placeholder {
+	.text-style(#8c8c8c, 15px, none);
+	font-weight: normal;
+}
+::-moz-placeholder {
+	.text-style(#8c8c8c, 15px, none);
+	font-weight: normal;
+}
+:-moz-placeholder {
+	.text-style(#8c8c8c, 15px, none);
+	font-weight: normal;
+}
+:-ms-input-placeholder {
+	.text-style(#8c8c8c, 15px, none);
+	font-weight: normal;
+}
+
+::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.5s ease;}
+::-moz-placeholder                {opacity: 1; transition: opacity 0.5s ease;}
+:-moz-placeholder                 {opacity: 1; transition: opacity 0.5s ease;}
+:-ms-input-placeholder            {opacity: 1; transition: opacity 0.5s ease;}
+:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.5s ease;}
+:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.5s ease;}
+:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.5s ease;}
+:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.5s ease;}
+
+.main-container__form_submit {
+	background-color: @red;
+	.text-style(light, 15px);
+	&:hover {
+		background-color: darken(@red, 10%);
+		cursor: pointer;
+	}
+	&:active {
+		background-color: darken(@red, 20%);	
+	}
+}
+
+.main-container__map {
+	margin-top: 25px;
+	width: 490px;
+	height: 240px;
+	background-color: grey;
+}
+
+.main-container__data_address {
+	.text-style(dark, 14px, none);
+	font-weight: normal;
+	margin-top: 25px;
+}
+
+.main-container__data_red {
+	color: @red;
+}
