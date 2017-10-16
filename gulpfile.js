@@ -6,6 +6,13 @@ var includer      = require('gulp-htmlincluder');
 var livereload 	  = require('gulp-livereload');
 var spritecreator = require('gulp.spritesmith');
 var less 		  = require('gulp-less');
+var concat 		  = require('gulp-concat');
+ 
+gulp.task('scripts', function() {
+  return gulp.src('dev/js/*.js')
+    .pipe(gulp.dest('build/js/'))
+    .pipe(connect.reload());
+});
 
 gulp.task('sprite', function(){
 	var spriteData = gulp.src('dev/img/*.png')
@@ -62,7 +69,7 @@ gulp.task('html', function(){
 });
 
 gulp.task('default', function(){
-	gulp.start('html','less', 'server');
+	gulp.start('html','less', 'scripts', 'server');
 
 	gulp.watch(['dev/styles/**/*.less'], function(){
 		gulp.start('less');
@@ -70,4 +77,7 @@ gulp.task('default', function(){
 	gulp.watch(['dev/**/*.html'], function(){
 		gulp.start('html');
 	});
+	gulp.watch(['dev/js/*.js'], function(){
+		gulp.start('scripts');
+	})
 });
