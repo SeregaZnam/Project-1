@@ -16,135 +16,261 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-1 {
+  background-image: url(sprite.png);
+  background-position: -1470px -1364px;
+  width: 235px;
+  height: 156px;
+}
+.icon-10 {
+  background-image: url(sprite.png);
+  background-position: -235px -1863px;
+  width: 235px;
+  height: 143px;
+}
+.icon-12 {
+  background-image: url(sprite.png);
+  background-position: -980px -1707px;
+  width: 266px;
+  height: 130px;
+}
+.icon-13 {
+  background-image: url(sprite.png);
+  background-position: -1246px -1707px;
+  width: 246px;
+  height: 130px;
+}
+.icon-14 {
+  background-image: url(sprite.png);
+  background-position: -1000px -1521px;
+  width: 235px;
+  height: 156px;
+}
+.icon-15 {
+  background-image: url(sprite.png);
+  background-position: -1235px -1521px;
+  width: 235px;
+  height: 156px;
+}
+.icon-16 {
+  background-image: url(sprite.png);
+  background-position: -1470px -1521px;
+  width: 235px;
+  height: 156px;
+}
+.icon-17 {
+  background-image: url(sprite.png);
+  background-position: 0px -1707px;
+  width: 235px;
+  height: 156px;
+}
+.icon-2 {
+  background-image: url(sprite.png);
+  background-position: 0px -1207px;
+  width: 1000px;
+  height: 500px;
+}
+.icon-3 {
+  background-image: url(sprite.png);
+  background-position: -1920px -564px;
+  width: 490px;
+  height: 326px;
+}
+.icon-4 {
+  background-image: url(sprite.png);
+  background-position: -705px -1707px;
+  width: 275px;
+  height: 130px;
+}
+.icon-5 {
+  background-image: url(sprite.png);
+  background-position: -1920px -1173px;
+  width: 490px;
+  height: 276px;
+}
+.icon-6 {
+  background-image: url(sprite.png);
+  background-position: -1920px -890px;
+  width: 490px;
+  height: 283px;
+}
+.icon-7 {
+  background-image: url(sprite.png);
+  background-position: -1920px 0px;
+  width: 490px;
+  height: 564px;
+}
+.icon-8 {
+  background-image: url(sprite.png);
+  background-position: -470px -1707px;
+  width: 235px;
+  height: 156px;
+}
+.icon-9 {
+  background-image: url(sprite.png);
+  background-position: -1470px -1207px;
+  width: 235px;
+  height: 157px;
+}
 .icon-aim {
   background-image: url(sprite.png);
-  background-position: -443px -381px;
+  background-position: -2130px -1616px;
   width: 50px;
   height: 50px;
 }
 .icon-battery {
   background-image: url(sprite.png);
-  background-position: -543px -381px;
+  background-position: -2280px -1616px;
   width: 49px;
   height: 26px;
 }
 .icon-caddy_full {
   background-image: url(sprite.png);
-  background-position: 0px -480px;
+  background-position: -1920px -1673px;
   width: 33px;
   height: 27px;
 }
 .icon-download {
   background-image: url(sprite.png);
-  background-position: -639px -381px;
+  background-position: -2280px -1642px;
   width: 49px;
   height: 24px;
 }
+.icon-facebook-2 {
+  background-image: url(sprite.png);
+  background-position: -2402px -1520px;
+  width: 8px;
+  height: 14px;
+}
 .icon-facebook {
   background-image: url(sprite.png);
-  background-position: -573px -407px;
+  background-position: -2390px -1534px;
   width: 8px;
   height: 14px;
 }
 .icon-for-square {
   background-image: url(sprite.png);
-  background-position: -603px -324px;
+  background-position: -2030px -1616px;
   width: 50px;
   height: 50px;
 }
 .icon-forrst {
   background-image: url(sprite.png);
-  background-position: -653px -324px;
+  background-position: -2230px -1616px;
   width: 50px;
   height: 50px;
 }
-.icon-google_plus {
+.icon-google-plus-2 {
   background-image: url(sprite.png);
-  background-position: -688px -381px;
+  background-position: -2390px -1491px;
   width: 16px;
   height: 14px;
 }
+.icon-google_plus {
+  background-image: url(sprite.png);
+  background-position: -2390px -1477px;
+  width: 16px;
+  height: 14px;
+}
+.icon-logo-heading {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 1920px;
+  height: 1207px;
+}
 .icon-logo {
   background-image: url(sprite.png);
-  background-position: -443px -324px;
+  background-position: -1920px -1616px;
   width: 110px;
   height: 57px;
 }
 .icon-mail {
   background-image: url(sprite.png);
-  background-position: -553px -324px;
+  background-position: -2180px -1616px;
   width: 50px;
   height: 50px;
 }
+.icon-pinterest-2 {
+  background-image: url(sprite.png);
+  background-position: -2390px -1505px;
+  width: 13px;
+  height: 15px;
+}
 .icon-pinterest {
   background-image: url(sprite.png);
-  background-position: -561px -407px;
+  background-position: -2390px -1520px;
   width: 12px;
   height: 14px;
 }
 .icon-project-1 {
   background-image: url(sprite.png);
-  background-position: 0px 0px;
+  background-position: -2155px -1449px;
   width: 235px;
   height: 167px;
 }
 .icon-project-2 {
   background-image: url(sprite.png);
-  background-position: -235px -324px;
-  width: 208px;
-  height: 130px;
+  background-position: 0px -1863px;
+  width: 235px;
+  height: 147px;
 }
 .icon-project-3 {
   background-image: url(sprite.png);
-  background-position: -470px -157px;
+  background-position: -1235px -1207px;
   width: 235px;
   height: 157px;
 }
 .icon-project-4 {
   background-image: url(sprite.png);
-  background-position: -470px 0px;
+  background-position: -1000px -1207px;
   width: 235px;
   height: 157px;
 }
 .icon-project-5 {
   background-image: url(sprite.png);
-  background-position: -235px 0px;
+  background-position: -1920px -1449px;
   width: 235px;
   height: 167px;
 }
 .icon-project-6 {
   background-image: url(sprite.png);
-  background-position: 0px -324px;
+  background-position: -235px -1707px;
   width: 235px;
   height: 156px;
 }
 .icon-project-7 {
   background-image: url(sprite.png);
-  background-position: -235px -167px;
+  background-position: -1000px -1364px;
   width: 235px;
   height: 157px;
 }
 .icon-project-8 {
   background-image: url(sprite.png);
-  background-position: 0px -167px;
+  background-position: -1235px -1364px;
   width: 235px;
   height: 157px;
 }
 .icon-share {
   background-image: url(sprite.png);
-  background-position: -493px -381px;
+  background-position: -2080px -1616px;
   width: 50px;
   height: 50px;
 }
 .icon-signs {
   background-image: url(sprite.png);
-  background-position: -592px -381px;
+  background-position: -2329px -1616px;
   width: 47px;
   height: 26px;
 }
+.icon-twitter-2 {
+  background-image: url(sprite.png);
+  background-position: -2390px -1463px;
+  width: 18px;
+  height: 14px;
+}
 .icon-twitter {
   background-image: url(sprite.png);
-  background-position: -543px -407px;
+  background-position: -2390px -1449px;
   width: 18px;
   height: 14px;
 }
