@@ -36,16 +36,16 @@
 	.text-style(light, 14px, none);
 	float: left;
 	margin-right: 5px;
-	height: 35px;
+	height: 34px;
 	position: relative;
 	&:nth-child(1) {
 		width: 92px;
-		background-color: #28a9e1;
 		.icon__social {
 			display: inline-block;
+			background-image: url(../img/sprite.png);
+			background-position: -2390px -1463px;
 			width: 18px;
-			height: 15px;
-			background-color: red;
+			height: 14px;
 			margin: 10px 10px 9px 9px;
 		}
 		.text__social {
@@ -57,12 +57,12 @@
 	}
 	&:nth-child(2) {
 		width: 102px;
-		background-color: #3a589c;
 		.icon__social {
 			display: inline-block;
-			width: 18px;
-			height: 15px;
-			background-color: red;
+			background-image: url(../img/sprite.png);
+			background-position: -2402px -1520px;
+			width: 8px;
+			height: 14px;
 			margin: 10px 10px 9px 9px;
 		}
 		.text__social {
@@ -74,12 +74,12 @@
 	}
 	&:nth-child(3) {
 		width: 98px;
-		background-color: #cb4638;
 		.icon__social {
 			display: inline-block;
-			width: 18px;
-			height: 15px;
-			background-color: red;
+			background-image: url(../img/sprite.png);
+			background-position: -2390px -1491px;
+			width: 16px;
+			height: 14px;
 			margin: 10px 10px 9px 9px;
 		}
 		.text__social {
@@ -91,13 +91,13 @@
 	}
 	&:nth-child(4) {
 		width: 100px;
-		background-color: #cb4638;
 		.icon__social {
 			display: inline-block;
-			width: 18px;
+			background-image: url(../img/sprite.png);
+			background-position: -2390px -1505px;
+			width: 13px;
 			height: 15px;
-			background-color: red;
-			margin: 10px 10px 9px 9px;
+			margin: 10px 10px 8px 9px;
 		}
 		.text__social {
 			display: inline-block;
@@ -108,10 +108,34 @@
 	}
 }
 
+.main-container__social_item div {
+	&:hover {
+		transition: all ease 0.5s;
+		box-shadow: 200px 0 0 0 rgba(0,0,0,.8) inset;
+	}
+}
+
+.social_twitter {
+	background-color: #28a9e1;
+}
+
+.social_facebook {
+	background-color: #3a589c;
+}
+
+.social_google-plus,
+.social_pinterest {
+	background-color: #cb4638;
+}
+
 .main-container__image {
 	height: 350px;
 	background-color: #b1b1b1;
 	margin-top: 30px;
+	background-image: url(../img/sprite.png);
+	background-position: 0px -1207px;
+	width: 1000px;
+	height: 350px;
 }
 
 .main-container__text {
