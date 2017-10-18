@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<header class="header-container">
@@ -30,12 +33,12 @@
 				<div class="main-container__text">
 					Curabitur suscipit lorem in turpis rutrum facilisis. Sed risus erat, varius et orci non, eleifend ultricies tortor.
 				</div>
-				<div class="main-container__form">
-					<form action="" class="main-container__form_data">
-						<input type="text" class="main-container__form_name form_input" placeholder="Full name">
-						<input type="text" class="main-container__form_mail form_input" placeholder="E-mail">
-						<textarea class="main-container__form_message form_input" placeholder="Message"></textarea>
-						<input type="submit" class="main-container__form_submit" value="submit">
+				<div class="main-container__form" id="test">
+					<form name="form_info" action="#" class="main-container__form_data" method="GET">
+						<input name="name" type="text" class="main-container__form_name form_input" placeholder="Full name">
+						<input name="email" type="text" class="main-container__form_mail form_input" placeholder="E-mail">
+						<textarea name="message" class="main-container__form_message form_input" placeholder="Message"></textarea>
+						<input type="submit" class="main-container__form_submit" id="submit" value="submit">
 					</form>
 				</div>
 			</article>
@@ -101,5 +104,6 @@
 		</section>
 	</div>
 </footer>
+	<script src="js/contact.js"></script>
 </body>
 </html>
