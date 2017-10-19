@@ -4,7 +4,6 @@ var inputName  = formInfo.elements.name;
 var inputEmail = formInfo.elements.email;
 var message    = formInfo.elements.message;
 var reg        = /^[a-zA-z]+\W?[a-z]+@[a-zA-z]+\.[a-z]{2,3}$/;
-var formInfo   = document.forms['form_info'];
 var flag 	   = false;
 
 submit.addEventListener('click', function(event){

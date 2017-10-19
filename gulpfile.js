@@ -7,6 +7,7 @@ var livereload 	  = require('gulp-livereload');
 var spritecreator = require('gulp.spritesmith');
 var less 		  = require('gulp-less');
 var concat 		  = require('gulp-concat');
+var autoprefixer  = require('gulp-autoprefixer');
  
 gulp.task('scripts', function() {
   return gulp.src('dev/js/*.js')
@@ -28,25 +29,45 @@ gulp.task('sprite', function(){
 gulp.task('less', function () {
   return gulp.src('dev/styles/home.less')
     .pipe(less())
+    .pipe(autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: false
+        }))
     .pipe(gulp.dest('build/css/'))
     && gulp.src('dev/styles/about.less')
     .pipe(less())
+    .pipe(autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: false
+        }))
     .pipe(gulp.dest('build/css/'))
-    .pipe(connect.reload())
     && gulp.src('dev/styles/products.less')
     .pipe(less())
+    .pipe(autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: false
+        }))
     .pipe(gulp.dest('build/css/'))
-    .pipe(connect.reload())
     && gulp.src('dev/styles/blog.less')
     .pipe(less())
+    .pipe(autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: false
+        }))
     .pipe(gulp.dest('build/css/'))
-    .pipe(connect.reload())
     && gulp.src('dev/styles/blog-post.less')
     .pipe(less())
+    .pipe(autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: false
+        }))
     .pipe(gulp.dest('build/css/'))
-    .pipe(connect.reload())
     && gulp.src('dev/styles/contact.less')
     .pipe(less())
+    .pipe(autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: false
+        }))
     .pipe(gulp.dest('build/css/'))
     .pipe(connect.reload());
 });
