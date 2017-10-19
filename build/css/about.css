@@ -289,6 +289,7 @@ a img {
   font-size: 38px;
   text-transform: uppercase;
   -webkit-transform: translateY(51px);
+  -ms-transform: translateY(51px);
   transform: translateY(51px);
 }
 .main-container__item-2_blocks {
@@ -297,6 +298,7 @@ a img {
   font-size: 14px;
   text-transform: none;
   -webkit-transform: translateY(120px);
+  -ms-transform: translateY(120px);
   transform: translateY(120px);
   height: 103px;
 }
@@ -332,6 +334,7 @@ a img {
   width: 10px;
   height: 10px;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .main-container__scroll_left:hover {
@@ -346,6 +349,7 @@ a img {
   width: 10px;
   height: 10px;
   -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 .main-container__scroll_right:hover {
@@ -363,6 +367,7 @@ a img {
   position: relative;
   right: 0;
   -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
   transition: all ease 1s;
 }
 .slider-items_two_float,
@@ -413,6 +418,7 @@ a img {
   height: 12px;
   line-height: 12px;
   -webkit-transform: translateY(36px);
+  -ms-transform: translateY(36px);
   transform: translateY(36px);
 }
 .footer-container__heading_red {

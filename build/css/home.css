@@ -337,6 +337,7 @@ a img {
   height: 100%;
   margin: 0 auto;
   -webkit-transform: translateY(100px);
+  -ms-transform: translateY(100px);
   transform: translateY(100px);
 }
 .our-project__heading {
@@ -362,6 +363,7 @@ a img {
   width: 10px;
   height: 10px;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   margin-right: 5px;
 }
@@ -377,6 +379,7 @@ a img {
   width: 10px;
   height: 10px;
   -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 .our-project__scroll_right:hover {
@@ -463,6 +466,7 @@ a img {
   position: relative;
   width: 2020px;
   -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
   transition: all ease 1s;
   right: 0;
 }
@@ -494,6 +498,7 @@ a img {
   height: 12px;
   line-height: 12px;
   -webkit-transform: translateY(36px);
+  -ms-transform: translateY(36px);
   transform: translateY(36px);
 }
 .footer-container__heading_red {

@@ -352,6 +352,7 @@ a img {
   height: 12px;
   line-height: 12px;
   -webkit-transform: translateY(36px);
+  -ms-transform: translateY(36px);
   transform: translateY(36px);
 }
 .footer-container__heading_red {

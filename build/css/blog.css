@@ -246,6 +246,7 @@ a img {
   width: 0%;
   background-color: #3e3e3e;
   -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
 }
 .main-container__heading_link:hover:after,
@@ -287,6 +288,7 @@ a img {
   width: 10px;
   height: 10px;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .main-container__scroll_left:hover {
@@ -301,6 +303,7 @@ a img {
   width: 10px;
   height: 10px;
   -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 .main-container__scroll_right:hover {
@@ -312,6 +315,7 @@ a img {
   height: 1000px;
   position: relative;
   -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
   transition: all ease 1s;
   right: 0;
 }
@@ -395,6 +399,7 @@ a img {
   height: 12px;
   line-height: 12px;
   -webkit-transform: translateY(36px);
+  -ms-transform: translateY(36px);
   transform: translateY(36px);
 }
 .footer-container__heading_red {

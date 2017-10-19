@@ -30,42 +30,42 @@ gulp.task('less', function () {
   return gulp.src('dev/styles/home.less')
     .pipe(less())
     .pipe(autoprefixer({
-            browsers: ['last 3 versions'],
+            browsers: ['last 3 versions', '> 5%'],
             cascade: false
         }))
     .pipe(gulp.dest('build/css/'))
     && gulp.src('dev/styles/about.less')
     .pipe(less())
     .pipe(autoprefixer({
-            browsers: ['last 3 versions'],
+            browsers: ['last 3 versions', '> 5%'],
             cascade: false
         }))
     .pipe(gulp.dest('build/css/'))
     && gulp.src('dev/styles/products.less')
     .pipe(less())
     .pipe(autoprefixer({
-            browsers: ['last 3 versions'],
+            browsers: ['last 3 versions', '> 5%'],
             cascade: false
         }))
     .pipe(gulp.dest('build/css/'))
     && gulp.src('dev/styles/blog.less')
     .pipe(less())
     .pipe(autoprefixer({
-            browsers: ['last 3 versions'],
+            browsers: ['last 3 versions', '> 5%'],
             cascade: false
         }))
     .pipe(gulp.dest('build/css/'))
     && gulp.src('dev/styles/blog-post.less')
     .pipe(less())
     .pipe(autoprefixer({
-            browsers: ['last 3 versions'],
+            browsers: ['last 3 versions', '> 5%'],
             cascade: false
         }))
     .pipe(gulp.dest('build/css/'))
     && gulp.src('dev/styles/contact.less')
     .pipe(less())
     .pipe(autoprefixer({
-            browsers: ['last 3 versions'],
+            browsers: ['last 3 versions', '> 5%'],
             cascade: false
         }))
     .pipe(gulp.dest('build/css/'))
