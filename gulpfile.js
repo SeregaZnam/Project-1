@@ -8,11 +8,26 @@ var spritecreator = require('gulp.spritesmith');
 var less 		  = require('gulp-less');
 var concat 		  = require('gulp-concat');
 var autoprefixer  = require('gulp-autoprefixer');
+var minify        = require('gulp-minify');
+var cleanCSS      = require('gulp-clean-css');
+var uglify 		  = require('gulp-uglify');
+var pump 		  = require('pump');
+var htmlmin 	  = require('gulp-htmlmin');
  
 gulp.task('scripts', function() {
   return gulp.src('dev/js/*.js')
     .pipe(gulp.dest('build/js/'))
     .pipe(connect.reload());
+});
+
+gulp.task('compress', function (cb) {
+  pump([
+        gulp.src('dev/js/*.js'),
+        uglify(),
+        gulp.dest('build/js/')
+    ],
+    cb
+  );
 });
 
 gulp.task('sprite', function(){
@@ -27,47 +42,13 @@ gulp.task('sprite', function(){
 });
 
 gulp.task('less', function () {
-  return gulp.src('dev/styles/home.less')
+  return gulp.src('dev/styles/*.less')
     .pipe(less())
     .pipe(autoprefixer({
             browsers: ['last 3 versions', '> 5%'],
             cascade: false
         }))
-    .pipe(gulp.dest('build/css/'))
-    && gulp.src('dev/styles/about.less')
-    .pipe(less())
-    .pipe(autoprefixer({
-            browsers: ['last 3 versions', '> 5%'],
-            cascade: false
-        }))
-    .pipe(gulp.dest('build/css/'))
-    && gulp.src('dev/styles/products.less')
-    .pipe(less())
-    .pipe(autoprefixer({
-            browsers: ['last 3 versions', '> 5%'],
-            cascade: false
-        }))
-    .pipe(gulp.dest('build/css/'))
-    && gulp.src('dev/styles/blog.less')
-    .pipe(less())
-    .pipe(autoprefixer({
-            browsers: ['last 3 versions', '> 5%'],
-            cascade: false
-        }))
-    .pipe(gulp.dest('build/css/'))
-    && gulp.src('dev/styles/blog-post.less')
-    .pipe(less())
-    .pipe(autoprefixer({
-            browsers: ['last 3 versions', '> 5%'],
-            cascade: false
-        }))
-    .pipe(gulp.dest('build/css/'))
-    && gulp.src('dev/styles/contact.less')
-    .pipe(less())
-    .pipe(autoprefixer({
-            browsers: ['last 3 versions', '> 5%'],
-            cascade: false
-        }))
+    .pipe(cleanCSS())
     .pipe(gulp.dest('build/css/'))
     .pipe(connect.reload());
 });
@@ -85,12 +66,13 @@ gulp.task('html', function(){
 		.pipe(replace({
 			css: 'css/style.css'
 		}))
+		.pipe(htmlmin({collapseWhitespace: true}))
 		.pipe(gulp.dest('build/'))
 		.pipe(connect.reload());
 });
 
 gulp.task('default', function(){
-	gulp.start('html','less', 'scripts', 'server');
+	gulp.start('html','less', 'scripts', 'compress', 'server');
 
 	gulp.watch(['dev/styles/**/*.less'], function(){
 		gulp.start('less');
