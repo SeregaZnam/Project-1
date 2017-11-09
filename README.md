@@ -22,7 +22,7 @@
 ### Карта проекта
 ```
 .
-├── build_
+├── build
 │   ├── css
 │   |   ├── about.css
 │   |   ├── blog.css
@@ -44,7 +44,7 @@
 |   ├── contact.html
 |   ├── home.html
 |   └── products.html
-├── dev_
+├── dev
 |    ├── img
 |    |   └──...
 |    ├── js
@@ -62,18 +62,18 @@
 |    |   ├── blog-post
 |    |   |   ├── header.less
 |    |   |   └── main.less
-|    |   ├── contact_
+|    |   ├── contact
 |    |   |   ├── header.less
 |    |   |   └── main.less
-|    |   ├── home_
+|    |   ├── home
 |    |   |   ├── header.less
 |    |   |   └── main.less
-|    |   ├── main_
+|    |   ├── main
 |    |   |   ├── footer.less
 |    |   |   ├── header.less
 |    |   |   ├── -reset.less
 |    |   |   └── style.less
-|    |   ├── products_
+|    |   ├── products
 |    |   |   ├── header.less
 |    |   |   └── main.less
 |    |   ├── about.less
@@ -82,25 +82,25 @@
 |    |   ├── contact.less
 |    |   ├── home.less
 |    |   └── products.less
-|    ├── template_
+|    ├── template
 |    |   ├── about
 |    |   |   ├── -header.html
 |    |   |   └── -main.html
-|    |   ├── blog_
+|    |   ├── blog
 |    |   |   ├── -header.html
 |    |   |   └── -main.html
-|    |   ├── blog-post_
+|    |   ├── blog-post
 |    |   |   ├── -header.html
 |    |   |   └── -main.html
-|    |   ├── contact_
+|    |   ├── contact
 |    |   |   ├── -header.html
 |    |   |   └── -main.html
-|    |   ├── home_
+|    |   ├── home
 |    |   |   ├── -header.html
 |    |   |   └── -main.html
-|    |   ├── main_
+|    |   ├── main
 |    |   |   └── -footer.html
-|    |   └── products_
+|    |   └── products
 |    |       ├── -header.html
 |    |       └── -main.html
 |    ├── about.html
