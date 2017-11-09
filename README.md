@@ -110,6 +110,7 @@
 |    ├── home.html
 |    └── products.html
 ├── .gitignore
+├── README.md
 ├── gulpfile.js
 └── package.json
 ```
