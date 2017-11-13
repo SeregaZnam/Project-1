@@ -45,7 +45,7 @@ gulp.task('less', function () {
   return gulp.src('dev/styles/*.less')
     .pipe(less())
     .pipe(autoprefixer({
-            browsers: ['last 3 versions', '> 5%'],
+            browsers: ['last 5 versions', '> 5%'],
             cascade: false
         }))
     .pipe(cleanCSS())
